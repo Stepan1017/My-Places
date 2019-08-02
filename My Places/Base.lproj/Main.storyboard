@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--MainVC-->
+        <!--My Places-->
         <scene sceneID="vo8-cz-hCe">
             <objects>
                 <tableViewController id="Cqc-bv-Gdd" customClass="MainVC" customModule="My_Places" customModuleProvider="target" sceneMemberID="viewController">
@@ -32,7 +32,7 @@
                             <outlet property="delegate" destination="Cqc-bv-Gdd" id="m91-um-W4e"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="MainVC" id="MLo-z7-38e"/>
+                    <navigationItem key="navigationItem" title="My Places" id="MLo-z7-38e"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sOs-mO-W4G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -46,6 +46,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Wro-F6-AKM">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="24"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -54,7 +57,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RT2-LQ-jSJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="237.59999999999999" y="-29.23538230884558"/>
+            <point key="canvasLocation" x="428" y="-29"/>
         </scene>
     </scenes>
 </document>
