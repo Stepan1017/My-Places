@@ -13,6 +13,8 @@
 		B285955422F1A5BD008E8850 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B285955222F1A5BD008E8850 /* LaunchScreen.storyboard */; };
 		B285955E22F1AB69008E8850 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B285955D22F1AB69008E8850 /* MainVC.swift */; };
 		B285956022F5D338008E8850 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B285955F22F5D338008E8850 /* CustomTableViewCell.swift */; };
+		B285956222F5D859008E8850 /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B285956122F5D859008E8850 /* PlaceModel.swift */; };
+		B285956422F72765008E8850 /* NewPlaceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B285956322F72765008E8850 /* NewPlaceVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		B285955522F1A5BD008E8850 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B285955D22F1AB69008E8850 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		B285955F22F5D338008E8850 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		B285956122F5D859008E8850 /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
+		B285956322F72765008E8850 /* NewPlaceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlaceVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,8 @@
 			children = (
 				B285954922F1A5BC008E8850 /* AppDelegate.swift */,
 				B285955D22F1AB69008E8850 /* MainVC.swift */,
+				B285956322F72765008E8850 /* NewPlaceVC.swift */,
+				B285956122F5D859008E8850 /* PlaceModel.swift */,
 				B285955F22F5D338008E8850 /* CustomTableViewCell.swift */,
 				B285954D22F1A5BC008E8850 /* Main.storyboard */,
 				B285955022F1A5BD008E8850 /* Assets.xcassets */,
@@ -139,7 +145,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B285956022F5D338008E8850 /* CustomTableViewCell.swift in Sources */,
+				B285956222F5D859008E8850 /* PlaceModel.swift in Sources */,
 				B285954A22F1A5BC008E8850 /* AppDelegate.swift in Sources */,
+				B285956422F72765008E8850 /* NewPlaceVC.swift in Sources */,
 				B285955E22F1AB69008E8850 /* MainVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,6 +297,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QD57JT6RGF;
 				INFOPLIST_FILE = "My Places/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,6 +316,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QD57JT6RGF;
 				INFOPLIST_FILE = "My Places/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
