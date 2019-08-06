@@ -64,21 +64,26 @@ class MainVC: UITableViewController {
             return [deleteAction]
     }
     
-    /*
+    
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        
+        if segue.identifier == "showDetail" {
+            guard let indexPath = tableView.indexPathForSelectedRow else { return }
+            let place = places[indexPath.row]
+            let newPlaceVC = segue.destination as! NewPlaceVC
+            newPlaceVC.currentPlace = place
+            
+        }
     }
-    */
+ 
     
     @IBAction func unwindSegue(_ segue: UIStoryboardSegue) {
         
         guard let newPlaceVC = segue.source as? NewPlaceVC else {return}
         
-        newPlaceVC.saveNewPLace()
+        newPlaceVC.savePLace()
         tableView.reloadData()
     }
 
