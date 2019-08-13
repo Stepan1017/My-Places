@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		41307BD0D2741ED841434115 /* Pods_My_Places.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4F206AFB0F77A1228D6EAE5 /* Pods_My_Places.framework */; };
+		B27DCF1D2302BD4B005874DB /* MapManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27DCF1C2302BD4B005874DB /* MapManger.swift */; };
 		B27FF20A22FC2DE30078AD23 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27FF20922FC2DE30078AD23 /* RatingControl.swift */; };
 		B285954A22F1A5BC008E8850 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B285954922F1A5BC008E8850 /* AppDelegate.swift */; };
 		B285954F22F1A5BC008E8850 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B285954D22F1A5BC008E8850 /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		5A8E7023F24BCE4C0F512524 /* Pods-My Places.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My Places.debug.xcconfig"; path = "Target Support Files/Pods-My Places/Pods-My Places.debug.xcconfig"; sourceTree = "<group>"; };
 		6896F69D6B2C5AC7F9BF60A5 /* Pods-My Places.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My Places.release.xcconfig"; path = "Target Support Files/Pods-My Places/Pods-My Places.release.xcconfig"; sourceTree = "<group>"; };
+		B27DCF1C2302BD4B005874DB /* MapManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapManger.swift; sourceTree = "<group>"; };
 		B27FF20922FC2DE30078AD23 /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 		B285954622F1A5BC008E8850 /* My Places.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Places.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B285954922F1A5BC008E8850 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +62,54 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B27DCF1E2302C71F005874DB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B285955F22F5D338008E8850 /* CustomTableViewCell.swift */,
+				B285956322F72765008E8850 /* NewPlaceVC.swift */,
+				B285955D22F1AB69008E8850 /* MainVC.swift */,
+				B2A31F1C22FD787A00015443 /* MapViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B27DCF1F2302C76C005874DB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B285956122F5D859008E8850 /* PlaceModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B27DCF202302C786005874DB /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B2D35FE822F857F70063BA2D /* StorageManger.swift */,
+				B27DCF1C2302BD4B005874DB /* MapManger.swift */,
+				B27FF20922FC2DE30078AD23 /* RatingControl.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		B27DCF212302C79B005874DB /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				B285954922F1A5BC008E8850 /* AppDelegate.swift */,
+				B285955022F1A5BD008E8850 /* Assets.xcassets */,
+				B285955522F1A5BD008E8850 /* Info.plist */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		B27DCF222302C7F7005874DB /* IBulder */ = {
+			isa = PBXGroup;
+			children = (
+				B285954D22F1A5BC008E8850 /* Main.storyboard */,
+				B285955222F1A5BD008E8850 /* LaunchScreen.storyboard */,
+			);
+			path = IBulder;
+			sourceTree = "<group>";
+		};
 		B285953D22F1A5BC008E8850 = {
 			isa = PBXGroup;
 			children = (
@@ -81,18 +131,11 @@
 		B285954822F1A5BC008E8850 /* My Places */ = {
 			isa = PBXGroup;
 			children = (
-				B285954922F1A5BC008E8850 /* AppDelegate.swift */,
-				B285955D22F1AB69008E8850 /* MainVC.swift */,
-				B285956322F72765008E8850 /* NewPlaceVC.swift */,
-				B285956122F5D859008E8850 /* PlaceModel.swift */,
-				B2D35FE822F857F70063BA2D /* StorageManger.swift */,
-				B285955F22F5D338008E8850 /* CustomTableViewCell.swift */,
-				B27FF20922FC2DE30078AD23 /* RatingControl.swift */,
-				B2A31F1C22FD787A00015443 /* MapViewController.swift */,
-				B285954D22F1A5BC008E8850 /* Main.storyboard */,
-				B285955022F1A5BD008E8850 /* Assets.xcassets */,
-				B285955222F1A5BD008E8850 /* LaunchScreen.storyboard */,
-				B285955522F1A5BD008E8850 /* Info.plist */,
+				B27DCF1E2302C71F005874DB /* ViewControllers */,
+				B27DCF202302C786005874DB /* Helpers */,
+				B27DCF1F2302C76C005874DB /* Models */,
+				B27DCF212302C79B005874DB /* SupportFiles */,
+				B27DCF222302C7F7005874DB /* IBulder */,
 			);
 			path = "My Places";
 			sourceTree = "<group>";
@@ -222,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B27FF20A22FC2DE30078AD23 /* RatingControl.swift in Sources */,
+				B27DCF1D2302BD4B005874DB /* MapManger.swift in Sources */,
 				B285956022F5D338008E8850 /* CustomTableViewCell.swift in Sources */,
 				B285956222F5D859008E8850 /* PlaceModel.swift in Sources */,
 				B285954A22F1A5BC008E8850 /* AppDelegate.swift in Sources */,
@@ -377,7 +421,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QD57JT6RGF;
-				INFOPLIST_FILE = "My Places/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/My Places/SupportFiles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -397,7 +441,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QD57JT6RGF;
-				INFOPLIST_FILE = "My Places/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/My Places/SupportFiles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
