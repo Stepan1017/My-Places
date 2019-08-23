@@ -93,8 +93,8 @@ class NewPlaceVC: UITableViewController {
     func savePLace() {
         
         
-        let image = imageIsChange ? placeImage.image : #imageLiteral(resourceName: "imagePlaceholder")
-        let imageData = image?.pngData()
+        guard let image = imageIsChange ? placeImage.image : #imageLiteral(resourceName: "imagePlaceholder") else { return }
+        let imageData = image.pngData()
         
         let newPlace = Place(name: placeName.text!,
                              location: placeLocation.text,
@@ -111,7 +111,13 @@ class NewPlaceVC: UITableViewController {
                 currentPlace?.rating = newPlace.rating
             }
         } else {
-        
+            CloudManager.saveDataToCloud(place: newPlace, with: image) { (recordId) in
+                DispatchQueue.main.async {
+                    try! realm.write {
+                        newPlace.recordID = recordId
+                    }
+                }
+            }
             StorageManger.saveObject(newPlace)
         }
     }
@@ -129,7 +135,7 @@ class NewPlaceVC: UITableViewController {
             placeName.text = currentPlace?.name
             placeLocation.text = currentPlace?.location
             placeType.text = currentPlace?.type
-            ratingControl.rating = Int(currentPlace.rating)
+            ratingControl.rating = currentPlace.rating
         }
     }
     
